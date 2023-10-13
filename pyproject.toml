@@ -8,10 +8,17 @@ packages = [{include = "worker_prototype", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
+redis = "^5.0.1"
+sqlalchemy = "^2.0.21"
+psycopg = {extras = ["binary", "pool"], version = "^3.1.12"}
 
 [tool.poetry.scripts]
 main = "worker_prototype:main"
+v1 = "worker_prototype.v1.main:main"
 
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.9.1"
 
 [build-system]
 requires = ["poetry-core"]
