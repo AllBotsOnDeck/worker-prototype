@@ -47,3 +47,4 @@ Example of an email assistant
 - state machines
 - trigger.dev
 - actor model? elixer?
+- gRPC
